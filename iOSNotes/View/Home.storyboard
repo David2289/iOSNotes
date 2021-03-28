@@ -33,23 +33,6 @@
             </objects>
             <point key="canvasLocation" x="1059.4202898550725" y="71.651785714285708"/>
         </scene>
-        <!--Tab Bar Controller-->
-        <scene sceneID="4gw-x0-uek">
-            <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="Dgu-zX-Q3Y" sceneMemberID="viewController">
-                    <toolbarItems/>
-                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="1Qw-UF-XfO">
-                        <autoresizingMask key="autoresizingMask"/>
-                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                    </tabBar>
-                    <connections>
-                        <segue destination="98k-4M-aCW" kind="relationship" relationship="viewControllers" id="iO8-KT-pgi"/>
-                    </connections>
-                </tabBarController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Orr-DF-Zzh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="149.27536231884059" y="71.651785714285708"/>
-        </scene>
     </scenes>
     <resources>
         <image name="IcHome" width="25" height="25"/>
