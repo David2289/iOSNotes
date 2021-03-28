@@ -1,0 +1,15 @@
+
+"MainHomeNavBarTitle" = "Home";
+"MainHomeTabTitle" = "Home";
+
+"MainTopicsNavBarTitle" = "Topics";
+"MainTopicsTabTitle" = "Topics";
+
+"MainSettingsNavBarTitle" = "Settings";
+"MainSettingsTabTitle" = "Settings";
+
+"HomeTitle" = "Welcome!";
+"HomeDesc" = "Simple App made with SwiftUI. The App is used to make notes through the commentaries on code to study some topics of iOS Development. Furthermore the project is used to take practice with the newest tech about Swift that sometimes I can't use at work.";
+
+"TopicsItemDisplayTitle" = "Display data";
+"TopicsItemDisplayDesc" = "Display a list of users called from ReqRes web page.in API REST. The communication is achieved with MVVM architecture using (not yet: Alamofire and RxJava to subscribe the responses.)";
