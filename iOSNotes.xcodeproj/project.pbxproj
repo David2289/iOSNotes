@@ -19,6 +19,14 @@
 		B314D34C26100F6500589B5A /* Topics.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B314D34B26100F6500589B5A /* Topics.storyboard */; };
 		B314D34F2610104500589B5A /* SetViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B314D34E2610104500589B5A /* SetViewController.swift */; };
 		B314D3522610115A00589B5A /* Settings.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B314D3512610115A00589B5A /* Settings.storyboard */; };
+		B33AFCAC261145010098AA3F /* Sailec-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B314D3582610B3FD00589B5A /* Sailec-Bold.ttf */; };
+		B33AFCAE261145030098AA3F /* Sailec-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B314D35A2610B3FD00589B5A /* Sailec-Light.ttf */; };
+		B33AFCB0261145080098AA3F /* Sailec-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B314D35B2610B3FD00589B5A /* Sailec-Medium.ttf */; };
+		B33AFCB1261145080098AA3F /* Sailec-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B314D35C2610B3FD00589B5A /* Sailec-Thin.ttf */; };
+		B33AFCB2261145080098AA3F /* Sailec-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B314D35D2610B3FD00589B5A /* Sailec-Regular.ttf */; };
+		B33AFCB3261145080098AA3F /* Sailec-RegularItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B314D3592610B3FD00589B5A /* Sailec-RegularItalic.ttf */; };
+		B33AFCBC261235600098AA3F /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33AFCBB261235600098AA3F /* CustomLabel.swift */; };
+		B3911FE526130E9800DE561B /* TextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3911FE426130E9800DE561B /* TextStyle.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +46,14 @@
 		B314D34B26100F6500589B5A /* Topics.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Topics.storyboard; sourceTree = "<group>"; };
 		B314D34E2610104500589B5A /* SetViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetViewController.swift; sourceTree = "<group>"; };
 		B314D3512610115A00589B5A /* Settings.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Settings.storyboard; sourceTree = "<group>"; };
+		B314D3582610B3FD00589B5A /* Sailec-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sailec-Bold.ttf"; sourceTree = "<group>"; };
+		B314D3592610B3FD00589B5A /* Sailec-RegularItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sailec-RegularItalic.ttf"; sourceTree = "<group>"; };
+		B314D35A2610B3FD00589B5A /* Sailec-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sailec-Light.ttf"; sourceTree = "<group>"; };
+		B314D35B2610B3FD00589B5A /* Sailec-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sailec-Medium.ttf"; sourceTree = "<group>"; };
+		B314D35C2610B3FD00589B5A /* Sailec-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sailec-Thin.ttf"; sourceTree = "<group>"; };
+		B314D35D2610B3FD00589B5A /* Sailec-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sailec-Regular.ttf"; sourceTree = "<group>"; };
+		B33AFCBB261235600098AA3F /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
+		B3911FE426130E9800DE561B /* TextStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStyle.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +97,8 @@
 		B30B7780260FD4B80020AA45 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				B30B7776260FD4A00020AA45 /* LaunchScreen.storyboard */,
-				B30B778C260FD75B0020AA45 /* Home.storyboard */,
-				B314D34B26100F6500589B5A /* Topics.storyboard */,
-				B314D3512610115A00589B5A /* Settings.storyboard */,
+				B3D70BC6261121080016154B /* Components */,
+				B3D70BC5261120F80016154B /* Storyboards */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -113,10 +127,44 @@
 		B30B7788260FD55F0020AA45 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				B314D3572610B1BD00589B5A /* Fonts */,
 				B30B7774260FD4A00020AA45 /* Assets.xcassets */,
 				B314D3422610082600589B5A /* Localizable.strings */,
 			);
 			path = Assets;
+			sourceTree = "<group>";
+		};
+		B314D3572610B1BD00589B5A /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				B314D3582610B3FD00589B5A /* Sailec-Bold.ttf */,
+				B314D35A2610B3FD00589B5A /* Sailec-Light.ttf */,
+				B314D35B2610B3FD00589B5A /* Sailec-Medium.ttf */,
+				B314D35D2610B3FD00589B5A /* Sailec-Regular.ttf */,
+				B314D3592610B3FD00589B5A /* Sailec-RegularItalic.ttf */,
+				B314D35C2610B3FD00589B5A /* Sailec-Thin.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		B3D70BC5261120F80016154B /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				B30B7776260FD4A00020AA45 /* LaunchScreen.storyboard */,
+				B30B778C260FD75B0020AA45 /* Home.storyboard */,
+				B314D34B26100F6500589B5A /* Topics.storyboard */,
+				B314D3512610115A00589B5A /* Settings.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		B3D70BC6261121080016154B /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				B33AFCBB261235600098AA3F /* CustomLabel.swift */,
+				B3911FE426130E9800DE561B /* TextStyle.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -180,10 +228,16 @@
 			files = (
 				B314D3402610082600589B5A /* Localizable.strings in Resources */,
 				B30B7778260FD4A00020AA45 /* LaunchScreen.storyboard in Resources */,
+				B33AFCB1261145080098AA3F /* Sailec-Thin.ttf in Resources */,
+				B33AFCAE261145030098AA3F /* Sailec-Light.ttf in Resources */,
 				B30B7775260FD4A00020AA45 /* Assets.xcassets in Resources */,
 				B314D34C26100F6500589B5A /* Topics.storyboard in Resources */,
 				B30B778D260FD75B0020AA45 /* Home.storyboard in Resources */,
+				B33AFCB2261145080098AA3F /* Sailec-Regular.ttf in Resources */,
 				B314D3522610115A00589B5A /* Settings.storyboard in Resources */,
+				B33AFCAC261145010098AA3F /* Sailec-Bold.ttf in Resources */,
+				B33AFCB3261145080098AA3F /* Sailec-RegularItalic.ttf in Resources */,
+				B33AFCB0261145080098AA3F /* Sailec-Medium.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -194,9 +248,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3911FE526130E9800DE561B /* TextStyle.swift in Sources */,
 				B30B7790260FD7D20020AA45 /* HomeViewController.swift in Sources */,
 				B314D34F2610104500589B5A /* SetViewController.swift in Sources */,
 				B30B776C260FD49E0020AA45 /* AppDelegate.swift in Sources */,
+				B33AFCBC261235600098AA3F /* CustomLabel.swift in Sources */,
 				B30B776E260FD49E0020AA45 /* SceneDelegate.swift in Sources */,
 				B314D34926100E7000589B5A /* TopicsViewController.swift in Sources */,
 				B30B7784260FD50D0020AA45 /* MainTabBarController.swift in Sources */,

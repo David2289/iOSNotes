@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Sailec-Regular.ttf">
+            <string>Sailec-Regular</string>
+        </array>
+    </customFonts>
+    <scenes>
+        <!--Item-->
+        <scene sceneID="1w5-tp-T4X">
+            <objects>
+                <viewController storyboardIdentifier="HomeVCId" id="98k-4M-aCW" customClass="HomeViewController" customModule="iOSNotes" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="fx7-uA-eHp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hPV-8L-vcU" customClass="CustomLabel" customModule="iOSNotes" customModuleProvider="target">
+                                <rect key="frame" x="168.5" y="94" width="77" height="20.5"/>
+                                <fontDescription key="fontDescription" name="Sailec-Regular" family="Sailec" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="sizeName" value="Title"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="Bold"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="colorName" value="Black"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="textKey" value="HomeTitle"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IcStar" translatesAutoresizingMaskIntoConstraints="NO" id="8Wh-zj-H3U">
+                                <rect key="frame" x="157" y="164.5" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="0zW-4o-BEL"/>
+                                    <constraint firstAttribute="width" constant="100" id="ecq-3R-zvW"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DESCRIPTION" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="waw-Xk-4Pv" customClass="CustomLabel" customModule="iOSNotes" customModuleProvider="target">
+                                <rect key="frame" x="30" y="314.5" width="354" height="20.5"/>
+                                <fontDescription key="fontDescription" name="Sailec-Regular" family="Sailec" pointSize="15"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="Regular"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="sizeName" value="Body"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="colorName" value="Gray"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="textKey" value="HomeDesc"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="j6p-Im-gdR"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="hPV-8L-vcU" firstAttribute="top" secondItem="j6p-Im-gdR" secondAttribute="top" constant="50" id="1ID-GU-kTq"/>
+                            <constraint firstItem="waw-Xk-4Pv" firstAttribute="top" secondItem="8Wh-zj-H3U" secondAttribute="bottom" constant="50" id="1JM-Cr-Zal"/>
+                            <constraint firstItem="j6p-Im-gdR" firstAttribute="trailing" secondItem="waw-Xk-4Pv" secondAttribute="trailing" constant="30" id="2AW-UD-yL4"/>
+                            <constraint firstItem="hPV-8L-vcU" firstAttribute="centerX" secondItem="fx7-uA-eHp" secondAttribute="centerX" id="5cc-vN-z3y"/>
+                            <constraint firstItem="waw-Xk-4Pv" firstAttribute="leading" secondItem="j6p-Im-gdR" secondAttribute="leading" constant="30" id="Bl7-ik-tKU"/>
+                            <constraint firstItem="8Wh-zj-H3U" firstAttribute="top" secondItem="hPV-8L-vcU" secondAttribute="bottom" constant="50" id="Og0-K3-62W"/>
+                            <constraint firstItem="8Wh-zj-H3U" firstAttribute="centerX" secondItem="fx7-uA-eHp" secondAttribute="centerX" id="el6-7h-BMh"/>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item" image="IcHome" id="2KW-EL-NeA"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="j09-LE-cNX" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1059.4202898550725" y="71.651785714285708"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="hPV-8L-vcU">
+            <size key="intrinsicContentSize" width="77" height="20.5"/>
+        </designable>
+        <designable name="waw-Xk-4Pv">
+            <size key="intrinsicContentSize" width="84.5" height="20.5"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="IcHome" width="25" height="25"/>
+        <image name="IcStar" width="50" height="50"/>
+    </resources>
+</document>
