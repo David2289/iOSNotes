@@ -27,6 +27,7 @@
 		B33AFCB3261145080098AA3F /* Sailec-RegularItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = B314D3592610B3FD00589B5A /* Sailec-RegularItalic.ttf */; };
 		B33AFCBC261235600098AA3F /* CustomLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B33AFCBB261235600098AA3F /* CustomLabel.swift */; };
 		B3911FE526130E9800DE561B /* TextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3911FE426130E9800DE561B /* TextStyle.swift */; };
+		B3911FF626136E9500DE561B /* ExtLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3911FF526136E9500DE561B /* ExtLabel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		B314D35D2610B3FD00589B5A /* Sailec-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sailec-Regular.ttf"; sourceTree = "<group>"; };
 		B33AFCBB261235600098AA3F /* CustomLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomLabel.swift; sourceTree = "<group>"; };
 		B3911FE426130E9800DE561B /* TextStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStyle.swift; sourceTree = "<group>"; };
+		B3911FF526136E9500DE561B /* ExtLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtLabel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +149,23 @@
 			path = Fonts;
 			sourceTree = "<group>";
 		};
+		B3911FE9261319C500DE561B /* Label */ = {
+			isa = PBXGroup;
+			children = (
+				B33AFCBB261235600098AA3F /* CustomLabel.swift */,
+				B3911FE426130E9800DE561B /* TextStyle.swift */,
+				B3911FF526136E9500DE561B /* ExtLabel.swift */,
+			);
+			path = Label;
+			sourceTree = "<group>";
+		};
+		B3911FEA261319D000DE561B /* CardListCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CardListCell;
+			sourceTree = "<group>";
+		};
 		B3D70BC5261120F80016154B /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
@@ -161,8 +180,8 @@
 		B3D70BC6261121080016154B /* Components */ = {
 			isa = PBXGroup;
 			children = (
-				B33AFCBB261235600098AA3F /* CustomLabel.swift */,
-				B3911FE426130E9800DE561B /* TextStyle.swift */,
+				B3911FEA261319D000DE561B /* CardListCell */,
+				B3911FE9261319C500DE561B /* Label */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -248,6 +267,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3911FF626136E9500DE561B /* ExtLabel.swift in Sources */,
 				B3911FE526130E9800DE561B /* TextStyle.swift in Sources */,
 				B30B7790260FD7D20020AA45 /* HomeViewController.swift in Sources */,
 				B314D34F2610104500589B5A /* SetViewController.swift in Sources */,
