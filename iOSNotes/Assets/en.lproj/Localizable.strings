@@ -13,3 +13,6 @@
 
 "TopicsItemDisplayTitle" = "Display data";
 "TopicsItemDisplayDesc" = "Display a list of users called from ReqRes web page.in API REST. The communication is achieved with MVVM architecture using (not yet: Alamofire and RxJava to subscribe the responses.)";
+
+"TopicsItemPermTitle" = "Permissions";
+"TopicsItemPermDesc" = "A topic to ask all types of permissions.";

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="CardReuseIdentifier" rowHeight="167" id="KGk-i7-Jjw" customClass="CardTableViewCell" customModule="iOSNotes" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="167"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="167"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="iQD-pf-QoB" userLabel="Bordered View">
+                        <rect key="frame" x="20" y="5" width="280" height="157"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JUz-fz-mBg" customClass="CustomLabel" customModule="iOSNotes" customModuleProvider="target">
+                                <rect key="frame" x="15" y="15" width="250" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="f60-LV-yoC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="Medium"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="sizeName" value="Title"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="colorName" value="Black"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6I0-Ol-TJV" customClass="CustomLabel" customModule="iOSNotes" customModuleProvider="target">
+                                <rect key="frame" x="15" y="51" width="250" height="91"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="Regular"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="sizeName" value="Body"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="colorName" value="Gray"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="JUz-fz-mBg" secondAttribute="trailing" constant="15" id="8hu-Yc-3BD"/>
+                            <constraint firstItem="JUz-fz-mBg" firstAttribute="top" secondItem="iQD-pf-QoB" secondAttribute="top" constant="15" id="9R0-AI-NUD"/>
+                            <constraint firstItem="6I0-Ol-TJV" firstAttribute="leading" secondItem="iQD-pf-QoB" secondAttribute="leading" constant="15" id="WIU-LO-xhh"/>
+                            <constraint firstItem="6I0-Ol-TJV" firstAttribute="top" secondItem="JUz-fz-mBg" secondAttribute="bottom" constant="15" id="cvx-gc-fiQ"/>
+                            <constraint firstAttribute="trailing" secondItem="6I0-Ol-TJV" secondAttribute="trailing" constant="15" id="f3G-9Q-Lnv"/>
+                            <constraint firstItem="JUz-fz-mBg" firstAttribute="leading" secondItem="iQD-pf-QoB" secondAttribute="leading" constant="15" id="foo-Ni-shx"/>
+                            <constraint firstAttribute="bottom" secondItem="6I0-Ol-TJV" secondAttribute="bottom" constant="15" id="pi2-EV-OcT"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="iQD-pf-QoB" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="20" id="19x-w2-LJK"/>
+                    <constraint firstAttribute="bottom" secondItem="iQD-pf-QoB" secondAttribute="bottom" constant="5" id="Kzg-ud-fdl"/>
+                    <constraint firstAttribute="trailing" secondItem="iQD-pf-QoB" secondAttribute="trailing" constant="20" id="n0l-Dd-ElK"/>
+                    <constraint firstItem="iQD-pf-QoB" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="5" id="poS-f3-rFF"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="borderedView" destination="iQD-pf-QoB" id="3dK-Z5-ck4"/>
+                <outlet property="desc" destination="6I0-Ol-TJV" id="B4f-cW-q1u"/>
+                <outlet property="title" destination="JUz-fz-mBg" id="wJY-SY-0Mn"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="170.42410714285714"/>
+        </tableViewCell>
+    </objects>
+    <designables>
+        <designable name="6I0-Ol-TJV">
+            <size key="intrinsicContentSize" width="76" height="15"/>
+        </designable>
+        <designable name="JUz-fz-mBg">
+            <size key="intrinsicContentSize" width="92.5" height="18"/>
+        </designable>
+    </designables>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
