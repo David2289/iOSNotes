@@ -8,26 +8,20 @@ class MainTabBarController: UITabBarController {
 
         let homeStoryboard = UIStoryboard(name: "Home", bundle: nil)
         let homeVC = homeStoryboard.instantiateViewController(identifier: "HomeVCId")
-        let homeNC = getNavController(navTitleKey: "MainHomeNavBarTitle",
-                                      tabTitleKey: "MainHomeTabTitle",
-                                      iconName: "IcHome",
-                                      rootVC: homeVC)
+        let homeNC = getNavController(vc: homeVC, navTitleKey: "MainHomeNavBarTitle")
+        setTabBar(vc: homeVC, tabTitleKey: "MainHomeTabTitle", tabIconName: "IcHome")
         
         
         let topicsStoryboard = UIStoryboard(name: "Topics", bundle: nil)
         let topicsVC = topicsStoryboard.instantiateViewController(identifier: "TopicsVCId")
-        let topicsNC = getNavController(navTitleKey: "MainTopicsNavBarTitle",
-                                        tabTitleKey: "MainTopicsTabTitle",
-                                        iconName: "IcList",
-                                        rootVC: topicsVC)
+        let topicsNC = getNavController(vc: topicsVC, navTitleKey: "MainTopicsNavBarTitle")
+        setTabBar(vc: topicsVC, tabTitleKey: "MainTopicsTabTitle", tabIconName: "IcList")
         
         
         let setStoryboard = UIStoryboard(name: "Settings", bundle: nil)
         let setVC = setStoryboard.instantiateViewController(identifier: "SetVCId")
-        let setNC = getNavController(navTitleKey: "MainSettingsNavBarTitle",
-                                     tabTitleKey: "MainSettingsTabTitle",
-                                     iconName: "IcSettings",
-                                     rootVC: setVC)
+        let setNC = getNavController(vc: setVC, navTitleKey: "MainSettingsNavBarTitle")
+        setTabBar(vc: setVC, tabTitleKey: "MainSettingsTabTitle", tabIconName: "IcSettings")
         
         // Selected Tab Color
         UITabBar.appearance().tintColor = #colorLiteral(red: 0.07843137255, green: 0.6941176471, blue: 0.6705882353, alpha: 1)
@@ -35,20 +29,20 @@ class MainTabBarController: UITabBarController {
     }
     
     
-    private func getNavController(navTitleKey: String, tabTitleKey: String, iconName:
-                                    String, rootVC: UIViewController) -> UINavigationController {
+    private func getNavController(vc: UIViewController, navTitleKey: String) -> UINavigationController {
         // Nav Bar
-        let navController = UINavigationController(rootViewController: rootVC)
+        let navController = UINavigationController(rootViewController: vc)
         navController.navigationBar.barTintColor = #colorLiteral(red: 0.07843137255, green: 0.6941176471, blue: 0.6705882353, alpha: 1)
         navController.navigationBar.titleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor.white]
-        rootVC.navigationItem.title = NSLocalizedString(navTitleKey, comment: "")
-        // Tab Bar
-        let tabTitle = NSLocalizedString(tabTitleKey, comment: "")
-        let tabIcon = UIImage(named: iconName)
-        let tabBarItem = UITabBarItem(title: tabTitle, image: tabIcon, tag: 0)
-        rootVC.tabBarItem = tabBarItem
-        
+        vc.navigationItem.title = NSLocalizedString(navTitleKey, comment: "")
         return navController
+    }
+    
+    private func setTabBar(vc: UIViewController, tabTitleKey: String, tabIconName: String) {
+        let tabTitle = NSLocalizedString(tabTitleKey, comment: "")
+        let tabIcon = UIImage(named: tabIconName)
+        let tabBarItem = UITabBarItem(title: tabTitle, image: tabIcon, tag: 0)
+        vc.tabBarItem = tabBarItem
     }
 
 }

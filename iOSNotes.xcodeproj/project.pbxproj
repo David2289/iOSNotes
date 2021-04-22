@@ -31,6 +31,7 @@
 		B36F6EA1261B531500328507 /* CardTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B36F6E9F261B531500328507 /* CardTableViewCell.xib */; };
 		B3911FE526130E9800DE561B /* TextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3911FE426130E9800DE561B /* TextStyle.swift */; };
 		B3911FF626136E9500DE561B /* ExtLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3911FF526136E9500DE561B /* ExtLabel.swift */; };
+		B3CF1C1626320F260000B996 /* GreenNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CF1C1526320F260000B996 /* GreenNavController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +63,7 @@
 		B36F6E9F261B531500328507 /* CardTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardTableViewCell.xib; sourceTree = "<group>"; };
 		B3911FE426130E9800DE561B /* TextStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStyle.swift; sourceTree = "<group>"; };
 		B3911FF526136E9500DE561B /* ExtLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtLabel.swift; sourceTree = "<group>"; };
+		B3CF1C1526320F260000B996 /* GreenNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenNavController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +121,7 @@
 				B30B778F260FD7D20020AA45 /* HomeViewController.swift */,
 				B314D34826100E7000589B5A /* TopicsViewController.swift */,
 				B314D34E2610104500589B5A /* SetViewController.swift */,
+				B3CF1C1526320F260000B996 /* GreenNavController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -290,6 +293,7 @@
 				B3911FE526130E9800DE561B /* TextStyle.swift in Sources */,
 				B30B7790260FD7D20020AA45 /* HomeViewController.swift in Sources */,
 				B36F6E9B261B4EC300328507 /* TopicsManager.swift in Sources */,
+				B3CF1C1626320F260000B996 /* GreenNavController.swift in Sources */,
 				B314D34F2610104500589B5A /* SetViewController.swift in Sources */,
 				B30B776C260FD49E0020AA45 /* AppDelegate.swift in Sources */,
 				B33AFCBC261235600098AA3F /* CustomLabel.swift in Sources */,
