@@ -32,6 +32,8 @@
 		B3911FE526130E9800DE561B /* TextStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3911FE426130E9800DE561B /* TextStyle.swift */; };
 		B3911FF626136E9500DE561B /* ExtLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3911FF526136E9500DE561B /* ExtLabel.swift */; };
 		B3CF1C1626320F260000B996 /* GreenNavController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CF1C1526320F260000B996 /* GreenNavController.swift */; };
+		B3CF1C1A2633B0280000B996 /* Author.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3CF1C192633B0280000B996 /* Author.storyboard */; };
+		B3CF1C1D263476220000B996 /* AuthorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3CF1C1C263476220000B996 /* AuthorViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -64,6 +66,8 @@
 		B3911FE426130E9800DE561B /* TextStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextStyle.swift; sourceTree = "<group>"; };
 		B3911FF526136E9500DE561B /* ExtLabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtLabel.swift; sourceTree = "<group>"; };
 		B3CF1C1526320F260000B996 /* GreenNavController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreenNavController.swift; sourceTree = "<group>"; };
+		B3CF1C192633B0280000B996 /* Author.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Author.storyboard; sourceTree = "<group>"; };
+		B3CF1C1C263476220000B996 /* AuthorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthorViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,6 +126,7 @@
 				B314D34826100E7000589B5A /* TopicsViewController.swift */,
 				B314D34E2610104500589B5A /* SetViewController.swift */,
 				B3CF1C1526320F260000B996 /* GreenNavController.swift */,
+				B3CF1C1C263476220000B996 /* AuthorViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -193,6 +198,7 @@
 				B30B778C260FD75B0020AA45 /* Home.storyboard */,
 				B314D34B26100F6500589B5A /* Topics.storyboard */,
 				B314D3512610115A00589B5A /* Settings.storyboard */,
+				B3CF1C192633B0280000B996 /* Author.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -266,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				B314D3402610082600589B5A /* Localizable.strings in Resources */,
+				B3CF1C1A2633B0280000B996 /* Author.storyboard in Resources */,
 				B30B7778260FD4A00020AA45 /* LaunchScreen.storyboard in Resources */,
 				B33AFCB1261145080098AA3F /* Sailec-Thin.ttf in Resources */,
 				B33AFCAE261145030098AA3F /* Sailec-Light.ttf in Resources */,
@@ -293,6 +300,7 @@
 				B3911FE526130E9800DE561B /* TextStyle.swift in Sources */,
 				B30B7790260FD7D20020AA45 /* HomeViewController.swift in Sources */,
 				B36F6E9B261B4EC300328507 /* TopicsManager.swift in Sources */,
+				B3CF1C1D263476220000B996 /* AuthorViewController.swift in Sources */,
 				B3CF1C1626320F260000B996 /* GreenNavController.swift in Sources */,
 				B314D34F2610104500589B5A /* SetViewController.swift in Sources */,
 				B30B776C260FD49E0020AA45 /* AppDelegate.swift in Sources */,

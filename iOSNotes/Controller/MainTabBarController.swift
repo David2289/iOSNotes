@@ -18,14 +18,14 @@ class MainTabBarController: UITabBarController {
         setTabBar(vc: topicsVC, tabTitleKey: "MainTopicsTabTitle", tabIconName: "IcList")
         
         
-        let setStoryboard = UIStoryboard(name: "Settings", bundle: nil)
-        let setVC = setStoryboard.instantiateViewController(identifier: "SetVCId")
-        let setNC = getNavController(vc: setVC, navTitleKey: "MainSettingsNavBarTitle")
-        setTabBar(vc: setVC, tabTitleKey: "MainSettingsTabTitle", tabIconName: "IcSettings")
+        let authorStoryboard = UIStoryboard(name: "Author", bundle: nil)
+        let authorVC = authorStoryboard.instantiateViewController(identifier: "AuthorVCId")
+        let authorNC = getNavController(vc: authorVC, navTitleKey: "MainSettingsNavBarTitle")
+        setTabBar(vc: authorNC, tabTitleKey: "MainSettingsTabTitle", tabIconName: "IcSettings")
         
         // Selected Tab Color
         UITabBar.appearance().tintColor = #colorLiteral(red: 0.07843137255, green: 0.6941176471, blue: 0.6705882353, alpha: 1)
-        viewControllers = [homeNC, topicsNC, setNC]
+        viewControllers = [homeNC, topicsNC, authorNC]
     }
     
     

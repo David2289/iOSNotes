@@ -16,3 +16,10 @@
 
 "TopicsItemPermTitle" = "Permissions";
 "TopicsItemPermDesc" = "A topic to ask all types of permissions.";
+
+"AuthorName" = "David Pasache Lavado";
+"AuthorEmail" = "david.2289@icloud.com";
+"AuthorPhone" = "+00 666 777 889";
+"AuthorSocialTitle" = "Social Network";
+"AuthorSocialLinkedIn" = "LinkedIn";
+"AuthorSocialGithub" = "Github";

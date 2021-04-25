@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Author View Controller-->
+        <scene sceneID="exJ-mt-O0Q">
+            <objects>
+                <viewController storyboardIdentifier="AuthorVCId" id="LSE-XV-rye" customClass="AuthorViewController" customModule="iOSNotes" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7by-fE-1eO">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="MyPhoto" translatesAutoresizingMaskIntoConstraints="NO" id="906-WO-Uds">
+                                <rect key="frame" x="147" y="74" width="120" height="120"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="120" id="7hj-7w-jxI"/>
+                                    <constraint firstAttribute="height" constant="120" id="AG7-ay-g1V"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="David Pasache Lavado" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="78e-zt-X9v" customClass="CustomLabel" customModule="iOSNotes" customModuleProvider="target">
+                                <rect key="frame" x="157.5" y="204" width="99" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="textKey" value="AuthorName"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="Medium"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="sizeName" value="Subtitle"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="colorName" value="Black"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="david.2289@icloud.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kKu-I5-10E" customClass="CustomLabel" customModule="iOSNotes" customModuleProvider="target">
+                                <rect key="frame" x="163" y="230" width="88" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="textKey" value="AuthorEmail"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="Italic"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="sizeName" value="Body"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="colorName" value="Black"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="+00 666 777 889" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nge-4Z-e8j" customClass="CustomLabel" customModule="iOSNotes" customModuleProvider="target">
+                                <rect key="frame" x="159.5" y="250" width="95.5" height="15"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="textKey" value="AuthorPhone"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="Italic"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="sizeName" value="Body"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="colorName" value="Black"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Social Netowrk" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BzQ-qx-msV" customClass="CustomLabel" customModule="iOSNotes" customModuleProvider="target">
+                                <rect key="frame" x="30" y="305" width="354" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="textKey" value="AuthorSocialTitle"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="fontName" value="Bold"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="sizeName" value="Subtitle"/>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="colorName" value="Black"/>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ci0-WE-nLA" userLabel="Linkedin">
+                                <rect key="frame" x="30" y="331" width="354" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="XWu-RA-grK"/>
+                                </constraints>
+                                <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="LinkedIn" image="IcLinkedin">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="S52-8H-aSz">
+                                <rect key="frame" x="30" y="381" width="354" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="oxu-P3-MTI"/>
+                                </constraints>
+                                <inset key="titleEdgeInsets" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <inset key="imageEdgeInsets" minX="10" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                <state key="normal" title="Github" image="IcGithub">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="EIK-Oj-JJr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="906-WO-Uds" firstAttribute="top" secondItem="EIK-Oj-JJr" secondAttribute="top" constant="30" id="2g7-m5-qrf"/>
+                            <constraint firstItem="Ci0-WE-nLA" firstAttribute="top" secondItem="BzQ-qx-msV" secondAttribute="bottom" constant="10" id="2ib-Yv-NU2"/>
+                            <constraint firstItem="nge-4Z-e8j" firstAttribute="top" secondItem="kKu-I5-10E" secondAttribute="bottom" constant="5" id="BU7-ha-VGz"/>
+                            <constraint firstItem="906-WO-Uds" firstAttribute="centerX" secondItem="7by-fE-1eO" secondAttribute="centerX" id="BaY-5l-Lsj"/>
+                            <constraint firstItem="EIK-Oj-JJr" firstAttribute="trailing" secondItem="S52-8H-aSz" secondAttribute="trailing" constant="30" id="BhY-tF-4hv"/>
+                            <constraint firstItem="EIK-Oj-JJr" firstAttribute="trailing" secondItem="BzQ-qx-msV" secondAttribute="trailing" constant="30" id="J5P-2f-a75"/>
+                            <constraint firstItem="EIK-Oj-JJr" firstAttribute="trailing" secondItem="Ci0-WE-nLA" secondAttribute="trailing" constant="30" id="KRq-lK-bhQ"/>
+                            <constraint firstItem="78e-zt-X9v" firstAttribute="top" secondItem="906-WO-Uds" secondAttribute="bottom" constant="10" id="N2J-EN-g56"/>
+                            <constraint firstItem="nge-4Z-e8j" firstAttribute="centerX" secondItem="7by-fE-1eO" secondAttribute="centerX" id="Prv-Rc-85T"/>
+                            <constraint firstItem="S52-8H-aSz" firstAttribute="leading" secondItem="EIK-Oj-JJr" secondAttribute="leading" constant="30" id="UEr-ke-jBa"/>
+                            <constraint firstItem="S52-8H-aSz" firstAttribute="top" secondItem="Ci0-WE-nLA" secondAttribute="bottom" id="ed8-LU-O3u"/>
+                            <constraint firstItem="78e-zt-X9v" firstAttribute="centerX" secondItem="7by-fE-1eO" secondAttribute="centerX" id="fZ2-mG-QNX"/>
+                            <constraint firstItem="BzQ-qx-msV" firstAttribute="leading" secondItem="EIK-Oj-JJr" secondAttribute="leading" constant="30" id="lXs-fX-YVd"/>
+                            <constraint firstItem="BzQ-qx-msV" firstAttribute="top" secondItem="nge-4Z-e8j" secondAttribute="bottom" constant="40" id="pV2-Lt-y5x"/>
+                            <constraint firstItem="kKu-I5-10E" firstAttribute="centerX" secondItem="7by-fE-1eO" secondAttribute="centerX" id="rbm-ii-Lj3"/>
+                            <constraint firstItem="kKu-I5-10E" firstAttribute="top" secondItem="78e-zt-X9v" secondAttribute="bottom" constant="10" id="sUy-RK-p49"/>
+                            <constraint firstItem="Ci0-WE-nLA" firstAttribute="leading" secondItem="EIK-Oj-JJr" secondAttribute="leading" constant="30" id="wvD-l5-AJg"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="githubButton" destination="S52-8H-aSz" id="0JG-8s-m4g"/>
+                        <outlet property="linkedinButton" destination="Ci0-WE-nLA" id="LhG-Fc-U9b"/>
+                        <outlet property="photoImageView" destination="906-WO-Uds" id="2w1-1J-mMw"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4Za-Ll-4GB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="284" y="173"/>
+        </scene>
+    </scenes>
+    <designables>
+        <designable name="78e-zt-X9v">
+            <size key="intrinsicContentSize" width="99" height="16"/>
+        </designable>
+        <designable name="BzQ-qx-msV">
+            <size key="intrinsicContentSize" width="140" height="16"/>
+        </designable>
+        <designable name="kKu-I5-10E">
+            <size key="intrinsicContentSize" width="88" height="15"/>
+        </designable>
+        <designable name="nge-4Z-e8j">
+            <size key="intrinsicContentSize" width="95.5" height="15"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="IcGithub" width="25" height="25"/>
+        <image name="IcLinkedin" width="25" height="25"/>
+        <image name="MyPhoto" width="1052" height="1289"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
